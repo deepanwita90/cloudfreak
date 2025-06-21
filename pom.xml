@@ -18,7 +18,9 @@
   <name>petclinic</name>
 
   <properties>
-  <java.version>17</java.version>
+ <wro4j.version>1.8.0</wro4j.version> <!-- latest stable or compatible -->
+
+    <java.version>17</java.version>
   <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
@@ -32,6 +34,13 @@
 
   <dependencies>
     <!-- Spring and Spring Boot dependencies -->
+    <dependency>
+  <groupId>mysql</groupId>
+  <artifactId>mysql-connector-java</artifactId>
+  <version>8.0.33</version> <!-- or latest stable -->
+  <scope>runtime</scope>
+</dependency>
+
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-actuator</artifactId>
